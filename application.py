@@ -23,7 +23,8 @@ def predict():
     # Return the result
     return jsonify({
         'input_text': text,
-        'sentiment_prediction': prediction
+        'sentiment_prediction': prediction,
+        'model_version': '1.1'
     })
 
 if __name__ == '__main__':
